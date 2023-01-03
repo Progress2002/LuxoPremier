@@ -1,3 +1,83 @@
-body {
-  background: teal;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #21637b;
+  --secondary-color: rgb(0, 0, -19);
+  --white-color: #fff;
+  --tertiary-color: wheat;
+}
+
+* {
+  outline: none;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  transition: 0.3s linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+header {
+  height: 85px;
+}
+
+.header-container {
+  background-color: var(--primary-color);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h1 a {
+  color: red;
+  width: fit-content;
+  background-color: var(--secondary-color);
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: 2px solid var(--white-color);
+}
+
+h1 span:nth-child(1) {
+  color: var(--tertiary-color);
+}
+
+.nav-links .nav-link a.active {
+  border-bottom: 2px solid var(--white-color);
+}
+
+.nav-link a {
+  font-weight: bold;
+  color: var(--white-color);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  padding: 8px 16px;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--tertiary-color);
 }
