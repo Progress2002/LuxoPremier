@@ -81,3 +81,24 @@ h1 span:nth-child(1) {
   cursor: pointer;
   color: var(--tertiary-color);
 }
+
+footer {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+}
+
+footer .container {
+  justify-content: space-around;
+}
+
+.authors,
+.authors a {
+  font-size: 30px;
+  color: var(--white-color);
+}
+
+.authors a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
