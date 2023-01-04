@@ -4,8 +4,7 @@ import { getApiData } from './homepage.js';
 const modal = document.querySelector('#modal');
 const body = document.querySelector('body');
 
-
-const modalDisplay =(movie) => {
+const modalDisplay = (movie) => {
   modal.innerHTML = '';
   modal.innerHTML += `
   <div class="close-modal-btn">
@@ -18,7 +17,7 @@ const modalDisplay =(movie) => {
       <h2 class="modal-title">${movie.name}</h2>
       <p class="modal-description">${movie.summary}</p>
     </div>
-  `
+  `;
   modal.classList.remove('hidden');
   body.classList.add('overflow');
 
@@ -26,17 +25,16 @@ const modalDisplay =(movie) => {
   closeModalBtn.addEventListener('click', () => {
     modal.classList.add('hidden');
     body.classList.remove('overflow');
-  })
+  });
+};
 
-}
-
-const selectedCardDetails = async(id) => {
+const selectedCardDetails = async (id) => {
   const shows = await getApiData(CARD_API);
-  shows.forEach(show => {
-    if(show.id === id) {
+  shows.forEach((show) => {
+    if (show.id === id) {
       modalDisplay(show);
     }
-  })
-}
+  });
+};
 
-export default selectedCardDetails
+export default selectedCardDetails;

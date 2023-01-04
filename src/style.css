@@ -115,6 +115,12 @@ h1 span:nth-child(1) {
   width: 100%;
 }
 
+/* modal image */
+.modal-image img {
+  width: 600px;
+  height: 500px;
+}
+
 .card-image img:hover {
   animation: shadow 0.8s linear backwards;
 }
@@ -247,7 +253,7 @@ footer .container {
   cursor: pointer;
 }
 
-.close-modal-btn button:hover{
+.close-modal-btn button:hover {
   animation: shadow 0.8s linear infinite;
 }
 
@@ -255,12 +261,7 @@ footer .container {
   text-align: center;
 }
 
-.modal-image img {
-  width: 600px;
-  height: 500px;
-}
-
-.modal-image img:hover{
+.modal-image img:hover {
   animation: shadow 0.8s linear forwards;
 }
 
@@ -270,9 +271,8 @@ footer .container {
   color: var(--tertiary-color);
 }
 
-.modal-body  {
+.modal-body {
   font-weight: 100;
   text-align: justify;
   color: var(--tertiary-color);
-
 }
