@@ -1,6 +1,6 @@
 import CARD_API from './apiUrl.js';
 
-const getApiData = async (URL) => {
+export const getApiData = async (URL) => {
   const res = await fetch(URL);
   const result = await res.json();
   return result;
@@ -8,9 +8,9 @@ const getApiData = async (URL) => {
 
 const showContainer = document.querySelector('.show-container');
 
-const DISPLAY = async () => {
+export const DISPLAY = async () => {
   const shows = await getApiData(CARD_API);
-  const showLength = 25;
+  const showLength = 30;
   for (let i = showLength; i > 0; i -= 1) {
     const index = Math.floor(Math.random() * 200);
     showContainer.innerHTML += ` 
@@ -30,11 +30,10 @@ const DISPLAY = async () => {
         <p class="likes">0</p> 
       </ul>
       <div class="btn-comment">
-        <button>Comments</button>
+        <button class="comment" id="${shows[index].id}">Comments</button>
       </div>
     </li>
     `;
   }
 };
 
-export default DISPLAY;

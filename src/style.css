@@ -32,6 +32,7 @@ body {
   gap: 60px;
 }
 
+/* header section */
 header {
   height: 85px;
 }
@@ -89,6 +90,7 @@ h1 span:nth-child(1) {
   color: var(--tertiary-color);
 }
 
+/* show container section */
 .show-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -159,6 +161,7 @@ h1 span:nth-child(1) {
   cursor: pointer;
 }
 
+/* footer section */
 footer {
   width: 100%;
 }
@@ -173,11 +176,103 @@ footer .container {
 
 .authors,
 .authors a {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--white-color);
 }
 
 .authors a {
   color: var(--tertiary-color);
   text-decoration: underline;
+}
+
+/* modal section */
+#modal.hidden {
+  /* display: none; */
+  opacity: 0;
+  animation: slideOUT 0.6s linear both;
+}
+
+/* #modal.slide-out */
+
+#modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  padding: 3rem  7rem;
+  overflow-y: auto;
+  color: #fff;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.93);
+  animation: slideIN 0.6s linear both;
+}
+
+@keyframes slideIN {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideOUT {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.close-modal-btn {
+  text-align: right;
+}
+
+.close-modal-btn button {
+  font-size: 20px;
+  background-color: red;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: var(--white-color);
+  border: 2px solid var(--tertiary-color);
+  cursor: pointer;
+}
+
+.close-modal-btn button:hover{
+  animation: shadow 0.8s linear infinite;
+}
+
+.modal-image {
+  text-align: center;
+}
+
+.modal-image img {
+  width: 600px;
+  height: 500px;
+}
+
+.modal-image img:hover{
+  animation: shadow 0.8s linear forwards;
+}
+
+.modal-title {
+  text-align: center;
+  margin: 15px;
+  color: var(--tertiary-color);
+}
+
+.modal-body  {
+  font-weight: 100;
+  text-align: justify;
+  color: var(--tertiary-color);
+
 }
