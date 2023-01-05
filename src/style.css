@@ -276,7 +276,7 @@ footer .container {
   color: var(--tertiary-color);
 }
 
-#coment-section {
+#comment-section {
   text-align: center;
   margin-top: 5rem;
   font-size: normal;
@@ -284,7 +284,9 @@ footer .container {
 }
 
 .comment-container {
-  margin: 20px auto;
+  margin: 20px auto 50px;
+  width: 400px;
+  text-align: justify;
 }
 
 .comment-list {
