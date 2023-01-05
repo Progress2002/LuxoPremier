@@ -7,20 +7,17 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Presentaton Link ](#-presentaton-link-)
+  - [🚀 Live Video ](#-live-video-)
   - [🚀 Project Details](#-project-details)
   - [👥  Team](#--team)
   - [🚀 Code Review link](#-code-review-link)
   - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites ](#prerequisites-)
+- [Build webpack ](#build-webpack-)
+  - [Setup](#setup)
   - [Clone Git Repository](#clone-git-repository)
 - [Install Dependencies(with following Command)](#install-dependencieswith-following-command)
-- [Build webpack ](#build-webpack-)
-  - [Start server](#start-server)
-    - [Prerequisites ](#prerequisites-)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
     - [Deployment ](#deployment-)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -65,20 +62,23 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Develop webapp around an API**
-- **Conduct test to ensure all edge cases are covered**
-- **Create web page using given wireframe and follow laid out requirements**
+- **Users can click on like buttons to like a movie**
+- **Users can click on comment button, read details and add comment to a movie**
 - **Users can filter the total number of movies displayed**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Presentaton Link <a name="live-demo"></a>
+
+<!-- - [You can view the presentation of our project here]() -->
+
+## 🚀 Live Video <a name="live-demo"></a>
 
 - [Live Demo Link](https://github.com/kennedyowusu/Group-Capstone-Project)
 
 ## 🚀 Project Details
 
-- [Kanban Board](https://github.com/kennedyowusu/Group-Capstone-Project/projects/1)
+- [JavaScript capstone project](https://github.com/microverseinc/curriculum-javascript/blob/main/group-capstone/js_capstone.md)
 
 ## 👥  Team
 - [ ] [Kennedy Owusu](https://github.com/kennedyowusu)
@@ -94,93 +94,35 @@
 
 To get a local copy up and running follow these simple example steps.
 
-## Clone Git Repository
-
--Reach to following Github URL:
-
-```
-https://github.com/kennedyowusu/Group-Capstone-Project
-
-```
-
--Copy the URL.
-
--In Visual Studio Code “Terminal” change the current working directory to the location where you want the cloned directory.
-
--Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
-
-```
-git clone {repository URL}
-```
-
-# Install Dependencies(with following Command)
-
-- npm install
-
-# Build webpack <a name="setup"></a>
-
-- run command
-
-```
-npm run build
-```
-
-## Start server
-
-```
-npm start
-```
 
 ### Prerequisites <a name="prerequisites"></a>
 
 In order to run this project you need:
 
-- [x] Basic Knowledge of **HTML**, **CSS**, & **JavaScript**.
-- [x] Basic knowledge of **ES6** syntax.
-- [x] Basic knowledge of **Git**, **GitHub** &**Gitflow**.
-- [x] Basic knowledge of **Linters**.
-- [x] Basic knowledge of **Webpack**.
-- [x] Basic knowledge of **Jest** unit-testing library.
-- [x] Basic knowledge of **VS Code** or any other code-editors.
+- [x] You need to have **nodejs** installed.
+- [x] You need to have a browser like **Google Chrome** installed.
+- [x] You need to have **git** installed
+- [x] You to have a code editor like **VS Code** or any other code-editors installed on you device.
 
-### Setup
+# Build webpack <a name="setup"></a>
+## Setup
 
-Clone this repository to your desired folder:
+## Clone Git Repository
 
-    _cd PATH_
-    
-    _git clone https://github.com/kennedyowusu/Group-Capstone-Project
+- In Visual Studio Code “Terminal” change the current working directory to the location where you want the cloned directory.
 
-   _cd Javascript-Group-Capstone_
+- Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
 
-   _npm install_
+```
+- git clone URL
 
-   _npm run build_
+ https://github.com/kennedyowusu/Group-Capstone-Project
+```
 
-   _npm start_
-
-### Install
-
-Install this project with:
+# Install Dependencies(with following Command)
 
 ```sh
   npm install
-```
-
-### Usage
-
-To run the project, execute the following command:
-
-```sh
-  npm start
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  npm test
 ```
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
@@ -229,7 +171,7 @@ Feel free to check the [issues page](https://github.com/kennedyowusu/Group-Capst
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+Please give a ⭐️ if you like this project! 🤝
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,6 +201,6 @@ curl -X POST https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT]([./LICENSE](https://github.com/kennedyowusu/Group-Capstone-Project/blob/develop/MIT.md)) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
