@@ -1,5 +1,6 @@
 import CARD_API from './apiUrl.js';
 import { postLike, getLikesData } from './likeApi.js';
+import selectedCardDetails from './modal.js';
 
 export const getApiData = async (URL) => {
   const res = await fetch(URL);
@@ -25,9 +26,20 @@ const renderLikes = async () => {
   });
 };
 
+const renderCommentPopup = () => {
+  const commentButton = document.querySelectorAll('button.comment');
+
+  commentButton.forEach((button) => {
+    button.addEventListener('click', () => {
+      const buttonID = button.parentNode.parentNode.getAttribute('id');
+      selectedCardDetails(parseInt(buttonID, 10));
+    });
+  });
+}
+
 export const DISPLAY = async () => {
   const shows = await getApiData(CARD_API);
-  const showLength = 30;
+  const showLength = 50;
   for (let i = showLength; i > 0; i -= 1) {
     const index = Math.floor(Math.random() * 50);
     showContainer.innerHTML += ` 
@@ -54,6 +66,7 @@ export const DISPLAY = async () => {
   }
 
   renderLikes();
+  renderCommentPopup();
 
   const likeBtnIcon = document.querySelectorAll('i.like-btn-icon');
   likeBtnIcon.forEach((button) => {
