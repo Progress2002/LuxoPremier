@@ -193,7 +193,6 @@ footer .container {
 
 /* modal section */
 #modal.hidden {
-  /* display: none; */
   opacity: 0;
   animation: slideOUT 0.6s linear both;
 }
@@ -275,4 +274,60 @@ footer .container {
   font-weight: 100;
   text-align: justify;
   color: var(--tertiary-color);
+}
+
+#coment-section {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: normal;
+  letter-spacing: 1px;
+}
+
+.comment-container {
+  margin: 20px auto;
+}
+
+.comment-list {
+  font-weight: normal;
+}
+
+form {
+  width: 250px;
+  margin: auto;
+}
+
+form h4 {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  color: #000;
+  padding: 8px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 4px  5px 1px var(--primary-color);
+}
+
+input {
+  height: 40px;
+  
+}
+
+textarea {
+  height: 90px;
+}
+
+.btn-submit button {
+  margin-top: 30px;
+  box-shadow: -2px -2px 1px var(--white-color);
+}
+
+.btn-submit button:hover {
+  box-shadow: 2px 2px 1px var(--white-color);
+  transform: translateY(-3px);
 }
