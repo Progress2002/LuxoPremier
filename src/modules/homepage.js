@@ -65,7 +65,7 @@ export const DISPLAY = async () => {
     </li>
     `;
   }
-  MovieCount.innerHTML = showLength
+  MovieCount.innerHTML = showLength;
   renderLikes();
   renderCommentPopup();
 
