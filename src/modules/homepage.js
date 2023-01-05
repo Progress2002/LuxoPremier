@@ -1,5 +1,6 @@
 import CARD_API from './apiUrl.js';
 import { postLike, getLikesData } from './likeApi.js';
+import selectedCardDetails from './modal.js'; //eslint-disable-line 
 
 export const getApiData = async (URL) => {
   const res = await fetch(URL);
@@ -8,6 +9,7 @@ export const getApiData = async (URL) => {
 };
 
 const showContainer = document.querySelector('.show-container');
+const MovieCount = document.querySelector('.movie-counter');
 
 const renderLikes = async () => {
   const likesData = await getLikesData(CARD_API);
@@ -25,9 +27,20 @@ const renderLikes = async () => {
   });
 };
 
+const renderCommentPopup = () => {
+  const commentButton = document.querySelectorAll('button.comment');
+
+  commentButton.forEach((button) => {
+    button.addEventListener('click', () => {
+      const buttonID = button.parentNode.parentNode.getAttribute('id');
+      selectedCardDetails(parseInt(buttonID, 10));
+    });
+  });
+};
+
 export const DISPLAY = async () => {
   const shows = await getApiData(CARD_API);
-  const showLength = 30;
+  const showLength = 50;
   for (let i = showLength; i > 0; i -= 1) {
     const index = Math.floor(Math.random() * 50);
     showContainer.innerHTML += ` 
@@ -52,8 +65,9 @@ export const DISPLAY = async () => {
     </li>
     `;
   }
-
+  MovieCount.innerHTML = showLength;
   renderLikes();
+  renderCommentPopup();
 
   const likeBtnIcon = document.querySelectorAll('i.like-btn-icon');
   likeBtnIcon.forEach((button) => {
