@@ -9,6 +9,7 @@ export const getApiData = async (URL) => {
 };
 
 const showContainer = document.querySelector('.show-container');
+const MovieCount = document.querySelector('.movie-counter');
 
 const renderLikes = async () => {
   const likesData = await getLikesData(CARD_API);
@@ -64,7 +65,7 @@ export const DISPLAY = async () => {
     </li>
     `;
   }
-
+  MovieCount.innerHTML = showLength
   renderLikes();
   renderCommentPopup();
 
