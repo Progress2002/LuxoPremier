@@ -14,10 +14,9 @@
   - [🚀 Code Review link](#-code-review-link)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites ](#prerequisites-)
-- [Build webpack ](#build-webpack-)
-  - [Setup](#setup)
-  - [Clone Git Repository](#clone-git-repository)
-- [Install Dependencies(with following Command)](#install-dependencieswith-following-command)
+    - [Setup](#setup)
+    - [Clone Git Repository](#clone-git-repository)
+    - [Install Dependencies](#install-dependencies)
     - [Deployment ](#deployment-)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -104,10 +103,10 @@ In order to run this project you need:
 - [x] You need to have **git** installed
 - [x] You to have a code editor like **VS Code** or any other code-editors installed on you device.
 
-# Build webpack <a name="setup"></a>
-## Setup
 
-## Clone Git Repository
+### Setup
+
+### Clone Git Repository
 
 - In Visual Studio Code “Terminal” change the current working directory to the location where you want the cloned directory.
 
@@ -119,7 +118,7 @@ In order to run this project you need:
  https://github.com/kennedyowusu/Group-Capstone-Project
 ```
 
-# Install Dependencies(with following Command)
+### Install Dependencies
 
 ```sh
   npm install
