@@ -6,7 +6,7 @@ export const getComment = async (ID) => {
   return result;
 };
 
-export const postComment = async (userInput) => fetch(POST_URL , {
+export const postComment = async (userInput) => fetch(POST_URL, {
   method: 'POST',
   headers: {
     'content-type': 'application/json',

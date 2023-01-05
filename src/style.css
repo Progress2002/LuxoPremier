@@ -237,6 +237,11 @@ footer .container {
   overflow: hidden;
 }
 
+.btn-submit button {
+  margin-top: 30px;
+  box-shadow: -2px -2px 1px var(--white-color);
+}
+
 .close-modal-btn {
   text-align: right;
 }
@@ -279,7 +284,7 @@ footer .container {
 #comment-section {
   text-align: center;
   margin-top: 5rem;
-  font-size: normal;
+  font-weight: normal;
   letter-spacing: 1px;
 }
 
@@ -317,16 +322,10 @@ textarea {
 
 input {
   height: 40px;
-  
 }
 
 textarea {
   height: 90px;
-}
-
-.btn-submit button {
-  margin-top: 30px;
-  box-shadow: -2px -2px 1px var(--white-color);
 }
 
 .btn-submit button:hover {

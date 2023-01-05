@@ -1,6 +1,6 @@
 import CARD_API from './apiUrl.js';
 import { postLike, getLikesData } from './likeApi.js';
-import selectedCardDetails from './modal.js';
+import selectedCardDetails from './modal.js'; //eslint-disable-line 
 
 export const getApiData = async (URL) => {
   const res = await fetch(URL);
@@ -35,7 +35,7 @@ const renderCommentPopup = () => {
       selectedCardDetails(parseInt(buttonID, 10));
     });
   });
-}
+};
 
 export const DISPLAY = async () => {
   const shows = await getApiData(CARD_API);

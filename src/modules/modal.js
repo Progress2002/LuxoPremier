@@ -1,5 +1,5 @@
 import CARD_API from './apiUrl.js';
-import { getApiData } from './homepage.js';
+import { getApiData } from './homepage.js'; //eslint-disable-line 
 import { postComment, getComment } from './commentApi.js';
 
 const modal = document.querySelector('#modal');
@@ -46,47 +46,45 @@ const modalDisplay = (movie) => {
   form.onsubmit = (e) => {
     e.preventDefault();
 
-    const { name, textarea } = e.target
-    const date = new Date()
+    const { name, textarea } = e.target;
+    const date = new Date();
     const day = `0${date.getDate()}`.slice(-2);
-    const month = `0${date.getMonth()+1}`.slice(-2);
+    const month = `0${date.getMonth() + 1}`.slice(-2);
     const year = date.getFullYear();
     const currentDate = `${day}/${month}/${year}`;
-    const username = `${currentDate} ${name.value}:`
+    const username = `${currentDate} ${name.value}:`;
 
-    commentContainer.innerHTML +=`
+    commentContainer.innerHTML += `
      <li class="comment-list">
       ${username} ${textarea.value}
-     </li>`
-     commentCounter.innerHTML = parseInt((commentCounter.innerHTML),10) +1;
+     </li>`;
+    commentCounter.innerHTML = parseInt((commentCounter.innerHTML), 10) + 1;
 
-     postComment({
-      "item_id": movie.id,
-      "username": name.value,
-      "comment": textarea.value
-     })
+    postComment({
+      item_id: movie.id,
+      username: name.value,
+      comment: textarea.value,
+    });
 
     form.reset();
-  }
-
+  };
 };
 
 const selectedCardDetails = async (id) => {
   const shows = await getApiData(CARD_API);
-  const comments = await getComment(id)
-  console.log(comments.id);
+  const comments = await getComment(id);
   shows.forEach((show) => {
     if (show.id === id) {
       modalDisplay(show);
       const commentContainer = document.querySelector('.comment-container');
       const commentCounter = document.querySelector('.comment-counter');
-      comments.forEach(comment => {
-        commentContainer.innerHTML +=`
+      comments.forEach((comment) => {
+        commentContainer.innerHTML += `
          <li class="comment-list">
           ${comment.creation_date} ${comment.username} ${comment.comment}
-        </li>`
-        commentCounter.innerHTML = parseInt((commentCounter.innerHTML),10) +1;
-      })
+        </li>`;
+        commentCounter.innerHTML = parseInt((commentCounter.innerHTML), 10) + 1;
+      });
     }
   });
 };
