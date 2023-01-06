@@ -69,11 +69,11 @@
 
 ## 🚀 Presentaton Link <a name="live-demo"></a>
 
-<!-- - [You can view the presentation of our project here]() -->
+- [You can view the presentation of our project here](https://drive.google.com/file/d/1H5PkA-i1_EXW1Vu3j3ECRZrKJuYUP3YE/view)
 
 ## 🚀 Live Video <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/kennedyowusu/Group-Capstone-Project)
+- [Live Demo Link](https://kennedyowusu.github.io/Group-Capstone-Project/dist/)
 
 ## 🚀 Project Details
 
@@ -200,6 +200,6 @@ curl -X POST https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]([./LICENSE](https://github.com/kennedyowusu/Group-Capstone-Project/blob/develop/MIT.md)) licensed.
+This project is [MIT]([./LICENSE](https://github.com/kennedyowusu/Group-Capstone-Project/blob/develop/LICENSE)) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
