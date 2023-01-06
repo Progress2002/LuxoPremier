@@ -1,8 +1,8 @@
 import CARD_API from './apiUrl.js';
 import { postLike, getLikesData } from './likeApi.js';
-import selectedCardDetails from './modal.js'; //eslint-disable-line 
+import selectedCardDetails from './modal.js';
 
-export const getApiData = async (URL) => {
+const getApiData = async (URL) => {
   const res = await fetch(URL);
   const result = await res.json();
   return result;
@@ -38,7 +38,7 @@ const renderCommentPopup = () => {
   });
 };
 
-export const DISPLAY = async () => {
+const DISPLAY = async () => {
   const shows = await getApiData(CARD_API);
   const showLength = 50;
   for (let i = showLength; i > 0; i -= 1) {
@@ -85,3 +85,5 @@ export const DISPLAY = async () => {
     });
   });
 };
+
+export default DISPLAY;

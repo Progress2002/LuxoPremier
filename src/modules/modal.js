@@ -1,9 +1,14 @@
 import CARD_API from './apiUrl.js';
-import { getApiData } from './homepage.js'; //eslint-disable-line 
 import { postComment, getComment } from './commentApi.js';
 
 const modal = document.querySelector('#modal');
 const body = document.querySelector('body');
+
+const getApiData = async (URL) => {
+  const res = await fetch(URL);
+  const result = await res.json();
+  return result;
+};
 
 const modalDisplay = (movie) => {
   modal.innerHTML = '';
