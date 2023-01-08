@@ -1,4 +1,4 @@
-import CARD_API from './apiUrl.js';
+// import CARD_API from './apiUrl.js';
 import { postComment, getComment } from './commentApi.js';
 
 const modal = document.querySelector('#modal');
@@ -61,9 +61,11 @@ const modalDisplay = (movie) => {
 
     commentContainer.innerHTML += `
      <li class="comment-list">
-      ${username} ${textarea.value}
+      ${username}: ${textarea.value}
      </li>`;
     commentCounter.innerHTML = parseInt((commentCounter.innerHTML), 10) + 1;
+
+    console.log(movie.id);
 
     postComment({
       item_id: movie.id,
@@ -75,23 +77,21 @@ const modalDisplay = (movie) => {
   };
 };
 
-const selectedCardDetails = async (id) => {
-  const shows = await getApiData(CARD_API);
+const cardDetails = async (id, name) => {
+  const show = await getApiData(
+    `https://api.tvmaze.com/singlesearch/shows?q=${name}`
+  );
   const comments = await getComment(id);
-  shows.forEach((show) => {
-    if (show.id === id) {
-      modalDisplay(show);
+   modalDisplay(show);
       const commentContainer = document.querySelector('.comment-container');
       const commentCounter = document.querySelector('.comment-counter');
       comments.forEach((comment) => {
         commentContainer.innerHTML += `
          <li class="comment-list">
-          ${comment.creation_date} ${comment.username} ${comment.comment}
+          ${comment.creation_date} ${comment.username}: ${comment.comment}
         </li>`;
         commentCounter.innerHTML = parseInt((commentCounter.innerHTML), 10) + 1;
       });
-    }
-  });
 };
 
-export default selectedCardDetails;
+export default cardDetails;
