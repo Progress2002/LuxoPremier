@@ -118,12 +118,14 @@ const renderUserSearch = () => {
     );
     const showLength = shows.length;
     for (let i = 0; i < showLength; i += 1) {
+      const obj = shows[i].show.image
+      const imgURL = Object.values(obj)[0]
       showContainer.innerHTML += ` 
         <li class="cards" id="${shows[i].show.id}">
           <div class="card-image">
           <a href="${shows[i].show.url}" target="blank">
             <img
-            src="${shows[i].show.image.medium}"
+            src="${imgURL}"
             alt="${shows[i].show.name} image" />
           </a>
           </div>
@@ -140,11 +142,12 @@ const renderUserSearch = () => {
         </li>
       `;
     }
-    // MovieCount.forEach((count) => {
-    //   // count.innerHTML = 0;
-    //   // count.innerHTML = showLength;
-    //   console.log(showLength);
-    // });
+    console.log(MovieCount);
+    MovieCount.forEach((count) => {
+      // count.innerHTML = 0;
+      count.innerHTML = showLength;
+      console.log(showLength);
+    });
 
     renderLikes();
     renderSearchCommentPopup()

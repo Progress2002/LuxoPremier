@@ -71,14 +71,6 @@ h1 span:nth-child(1) {
   color: var(--tertiary-color);
 }
 
-.searchContainer {
-  /* width: 25rem;
-  height: 45px; */
-  /* border-radius: 80px;text-align: center; */
-
-  /* background-color: red; */
-}
-
 #search-form {
   width: 100%;
   display: flex;
@@ -431,7 +423,7 @@ footer .container {
     margin-right: 15px;
     width: 26px;
   }
-  
+   
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
