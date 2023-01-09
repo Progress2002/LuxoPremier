@@ -377,6 +377,20 @@ footer .container {
 }
 
 @media (max-width: 768px) {
+  .header-container {
+    height: 110px;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 17px;
+  }
+
   nav {
     display: none;
   }
@@ -397,6 +411,36 @@ footer .container {
   h1 a {
     padding: 5px 15px;
   }
+
+  .searchContainer {
+    border: none;
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    right: 30%;
+
+  }
+
+  #search-form {
+    border: none;
+    width: 210px;
+    height: 35px;
+  }
+  
+  #search-form input {
+    border-radius: 0;
+    padding-left: 8px;
+    font-size: 14px;
+    background-color: var(--secondary-color);
+    height: 100%;
+    box-shadow: none;
+  }
+  
+  #search-form button[type="submit"] {
+    border-radius: 0;
+    font-size: 15px;
+  }
+  
 
   .hamburger {
     display: block;
