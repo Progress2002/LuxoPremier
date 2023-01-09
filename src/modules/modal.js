@@ -26,7 +26,7 @@ const modalDisplay = (movie) => {
   <div id="comment-section">
     <h4 class="comment-title">Comments (<span class="comment-counter">0</span>)</h4>
     <ul class="comment-container"></ul>
-    <form action="">
+    <form id="form" action="">
       <h4>Add a comment</h4>
       <input type="text" required placeholder="Your name" id="name" name="name">
       <textarea name="textarea" id="textarea"  required placeholder="Your insights"></textarea>
@@ -45,7 +45,7 @@ const modalDisplay = (movie) => {
     body.classList.remove('overflow');
   });
 
-  const form = document.querySelector('form');
+  const form = document.querySelector('#form');
   const commentContainer = document.querySelector('.comment-container');
   const commentCounter = document.querySelector('.comment-counter');
   form.onsubmit = (e) => {
@@ -94,4 +94,4 @@ const selectedCardDetails = async (id) => {
   });
 };
 
-export default selectedCardDetails;
+export { selectedCardDetails, modalDisplay };
