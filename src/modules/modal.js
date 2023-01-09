@@ -94,4 +94,4 @@ const selectedCardDetails = async (id) => {
   });
 };
 
-export {selectedCardDetails, modalDisplay};
+export { selectedCardDetails, modalDisplay };
