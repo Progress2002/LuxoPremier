@@ -1,6 +1,6 @@
 import CARD_API from "./apiUrl.js";
 import { postLike, getLikesData } from "./likeApi.js";
-import selectedCardDetails from "./modal.js";
+import {selectedCardDetails} from "./modal.js";
 import cardDetails from "./searchModal.js";
 
 const getApiData = async (URL) => {
