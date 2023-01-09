@@ -8,7 +8,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Presentaton Link ](#-presentaton-link-)
-  - [🚀 Live Video ](#-live-video-)
+  - [🚀 Live Demo ](#-live-video-)
   - [🚀 Project Details](#-project-details)
   - [👥  Team](#--team)
   - [🚀 Code Review link](#-code-review-link)
@@ -71,9 +71,9 @@
 
 - [You can view the presentation of our project here](https://drive.google.com/file/d/1H5PkA-i1_EXW1Vu3j3ECRZrKJuYUP3YE/view)
 
-## 🚀 Live Video <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://kennedyowusu.github.io/Group-Capstone-Project/dist/)
+- [Live Demo Link](https://progress2002.github.io/LuxoPremier/dist/)
 
 ## 🚀 Project Details
 
@@ -162,7 +162,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kennedyowusu/Group-Capstone-Project/issues).
+Feel free to check the [issues page](https://github.com/Progress2002/LuxoPremier/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,6 +200,6 @@ curl -X POST https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]([./LICENSE](https://github.com/kennedyowusu/Group-Capstone-Project/blob/develop/LICENSE)) licensed.
+This project is [MIT]([./LICENSE](https://github.com/Progress2002/LuxoPremier/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
