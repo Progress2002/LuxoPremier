@@ -5,15 +5,15 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Javascript Group Capstone ](#-javascript-group-capstone-)
   - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
+  - [Tech Stack ](#tech-stack-)
+   - [Key Features ](#key-features-)
   - [🚀 Presentaton Link ](#-presentaton-link-)
   - [🚀 Live Demo ](#-live-video-)
   - [🚀 Project Details](#-project-details)
   - [👥  Team](#--team)
   - [🚀 Code Review link](#-code-review-link)
   - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites ](#prerequisites-)
+   - [Prerequisites ](#prerequisites-)
     - [Setup](#setup)
     - [Clone Git Repository](#clone-git-repository)
     - [Install Dependencies](#install-dependencies)
@@ -64,14 +64,15 @@
 - **Users can click on like buttons to like a movie**
 - **Users can click on comment button, read details and add comment to a movie**
 - **Users can filter the total number of movies displayed**
+- **Users can search up a new movie with the search button**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Presentaton Link <a name="live-demo"></a>
+## 🚀 Presentaton Link <a name="live-demo" id="-presentaton-link-"></a>
 
 - [You can view the presentation of our project here](https://drive.google.com/file/d/1H5PkA-i1_EXW1Vu3j3ECRZrKJuYUP3YE/view)
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo" id="-live-video-"></a>
 
 - [Live Demo Link](https://progress2002.github.io/LuxoPremier/dist/)
 
@@ -94,7 +95,7 @@
 To get a local copy up and running follow these simple example steps.
 
 
-### Prerequisites <a name="prerequisites"></a>
+### Prerequisites <a name="prerequisites" id="prerequisites-"></a>
 
 In order to run this project you need:
 
