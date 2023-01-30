@@ -143,7 +143,7 @@ You can deploy this project using:
 
 - GitHub: [@githubhandle](https://github.com/Progress2002)
 - Twitter: [@twitterhandle](https://twitter.com/Progress_2002)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/progress-ezeamaka-27b114247)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/progress-c-ezeamaka)
 
 👤 **Kennedy Owusu**
 
